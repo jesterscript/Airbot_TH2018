@@ -20,3 +20,56 @@ Payment Options ->hemen öde /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]
 semt         /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[1]/span/span[3]/span[1]
 			/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[2]/span
 			/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[3]/span/span[3]/span[1]
+
+			Filter Results  /html/body/div[13]/div/div[2]/div/div/div[4]/div[1]/div[2]/div[3]/div/a[3]/span
+
+
+			First hotel select
+		//ilk oteli aciyor
+		 driver.findElement(By.xpath("//img[contains(@data-element-index,'0')]")).click();
+		 
+
+			/html/body/div[13]/div/div[2]/div/div/div[4]/div[1]/div[3]/ol/li[1]/a/div/div/section/div[3]/ul/li[1]/h3
+
+Room specs selection
+
+varsa bu objeler clicklenecek checkbox
+ücretsiz iptal			/html/body/div[14]/div/div[4]/div/div[2]/div[4]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[3]/span
+Sonra öde /html/body/div[14]/div/div[4]/div/div[2]/div[4]/div/div[2]/div[1]/div/div/div[2]/div/div[2]/div/div[3]/span
+Sigara içilmeyen /html/body/div[14]/div/div[4]/div/div[2]/div[4]/div/div[2]/div[1]/div/div/div[2]/div/div[3]/div/div[3]/span
+
+oda sayısı
+//option[contains(.,'1')]
+Oda Rezervasyon yap
+//button[@data-element-name='book-btn']
+
+pay later
+
+//button[@name='pay-later-button']
+
+yeni son sayfa
+id="specialRequestsToggle"
+sessiz oda /html/body/section/div/div/form/div/div[3]/div/div[1]/div[4]/div/div[3]/div/div/fieldset/div[1]/div[1]/div[2]/label/span
+bebk yatagı /html/body/section/div/div/form/div/div[3]/div/div[1]/div[4]/div/div[3]/div/div/fieldset/div[1]/div[2]/div/label
+
+SUBMIT
+//button[@data-element-name='submit-step1-button']
+
+kart bilgi
+//input[@id='cvvCode'] param:308
+para birimi //option[@value='EUR']
+submit  //button[@type='submit']
+
+
+rezervasyon tamamlandı verify  "Teşekkürler  Airbot. Rezervasyonunuz tamamland!" bu texti verfy et
+/html/body/section[1]/div/div/h3
+
+
+ana sayfaya dön
+/html/body/header/section/nav[1]/div[1]/a/img[1]
+
+Rezervasyonlarım sayfasına gel
+//span[@class='signin-text']
+
+rezervasyonlarım
+/html/body/header/section/nav[2]/span/div/ul/li[1]/ul/li/div/ul/li[1]/a/span
