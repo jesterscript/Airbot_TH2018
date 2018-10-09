@@ -14,15 +14,20 @@
 		</classes>
 	</test>
 	<test name="HB Chrome" parallel="none">
-		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="cityName" value="Paris"></parameter>
 		<parameter name="monthIndex" value="4"></parameter>
 		<parameter name="checkinDay" value="20"></parameter>
 		<parameter name="checkoutDay" value="23"></parameter>
 		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="money" value="500"></parameter>
 
 		<classes>
 
 			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+			<class name="agodaAutomation.ReservationOperation">
 				<methods>
 				</methods>
 			</class>
@@ -33,14 +38,19 @@
 	</test>
 	<test name="HB Firefox" parallel="none">
 		<parameter name="browserName" value="firefox"></parameter>
-		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="cityName" value="Paris"></parameter>
 		<parameter name="monthIndex" value="4"></parameter>
 		<parameter name="checkinDay" value="20"></parameter>
 		<parameter name="checkoutDay" value="23"></parameter>
+		<parameter name="money" value="500"></parameter>
 
 		<classes>
 
 			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+			<class name="agodaAutomation.ReservationOperation">
 				<methods>
 				</methods>
 			</class>
@@ -52,14 +62,19 @@
 
 	<test name="HB Edge" parallel="none">
 		<parameter name="browserName" value="edge"></parameter>
-		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="cityName" value="Paris"></parameter>
 		<parameter name="monthIndex" value="4"></parameter>
 		<parameter name="checkinDay" value="20"></parameter>
 		<parameter name="checkoutDay" value="23"></parameter>
+		<parameter name="money" value="500"></parameter>
 
 		<classes>
 
 			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+			<class name="agodaAutomation.ReservationOperation">
 				<methods>
 				</methods>
 			</class>
