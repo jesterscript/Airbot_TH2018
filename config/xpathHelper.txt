@@ -1,0 +1,22 @@
+maxprice ->//input[@id='price_box_1']
+star -> //i[@class='ficon ficon-star-5 star-orange']
+		//i[@class='ficon ficon-star-4 star-orange']
+		//i[@class='ficon ficon-star-3 star-orange']
+locationRating ->mükemmel /html/body/div[13]/div/div[2]/div/div/div[1]/div/div/div/ul/li[3]/div[2]/ul/li[1]/span/span[3]/span[1]
+			     kusursuz /html/body/div[13]/div/div[2]/div/div/div[1]/div/div/div/ul/li[3]/div[2]/ul/li[2]/span/span[3]/span[1]
+				 çok iyi /html/body/div[13]/div/div[2]/div/div/div[1]/div/div/div/ul/li[3]/div[2]/ul/li[3]/span/span[3]/span[1]
+AccomodationClass ->ekonomik /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[1]/div[2]/ul/li[1]/span/span[2]/span[1]
+					lüx /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[1]/div[2]/ul/li[2]/span/span[2]/span[1]
+Deals and Discounts ->%50 /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[2]/div[2]/ul/li[1]/span/span[2]/span
+					Gizli	  /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[2]/div[2]/ul/li[2]/span/span[2]/span
+Popularfilter ->Kahvaltı dahil /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[3]/div[2]/ul/li[1]/span/span[2]/span[1]
+				Aile çocuk /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[3]/div[2]/ul/li[2]/span/span[2]/span[1]
+GuestRating mükemmel   /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[4]/div[2]/ul/li[1]/span/span[3]/span[1]
+			kusursuz	/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[4]/div[2]/ul/li[2]/span/span[3]/span[1]
+			Çok iyi     	/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[4]/div[2]/ul/li[3]/span/span[3]/span[2]
+Payment Options ->hemen öde /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[5]/div[2]/ul/li[1]/span/span[2]/span[1]
+					ücretsiz iptal /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[5]/div[2]/ul/li[1]/span/span[2]/span[1]
+					şimdi ayır sonra /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[5]/div[2]/ul/li[3]/span/span[2]/span[1]
+semt         /html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[1]/span/span[3]/span[1]
+			/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[2]/span
+			/html/body/div[13]/div/div[2]/div/div/div[3]/div[2]/div/div[2]/div/div/ul/li[9]/div[2]/ul/li[3]/span/span[3]/span[1]
