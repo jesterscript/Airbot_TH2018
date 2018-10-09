@@ -20,14 +20,15 @@ public class FlightSelectionPage {
 
 	WebDriver driver;
 
-	@Parameters({ "fromCityName", "toCityName", "monthIndex", "departureDay", "arrivalDay", "year" })
+	@Parameters({"browserName","cityName", "monthIndex", "checkinDay", "checkoutDay", "year" })
 	@Test
-	public void flightSearch(String fromCityName, String toCityName, String monthIndex, String departureDay, String arrivalDay, String year) {
+	public void flightSearch(String browserName,String cityName, String monthIndex, String checkinDay, String checkoutDay, String year) {
 
+		driver = DriverManager.getProperDriver(browserName);
 		driver.get("https://flights.agoda.com/flights");
 		driver.findElement(By.xpath("//input[@id='LNzE-origin']")).click();
 		driver.findElement(By.xpath("//input[@id='LNzE-origin']")).clear();
-		driver.findElement(By.xpath("//input[@id='LNzE-origin']")).sendKeys(fromCityName);
+		driver.findElement(By.xpath("//input[@id='LNzE-origin']")).sendKeys("Istanbul");
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -38,7 +39,7 @@ public class FlightSelectionPage {
 		
 		driver.findElement(By.xpath("//input[@id='EjrH-destination']")).click();
 		driver.findElement(By.xpath("//input[@id='EjrH-destination']")).clear();
-		driver.findElement(By.xpath("//input[@id='EjrH-destination']")).sendKeys(toCityName);
+		driver.findElement(By.xpath("//input[@id='EjrH-destination']")).sendKeys(cityName);
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -47,7 +48,7 @@ public class FlightSelectionPage {
 		}
 		driver.findElement(By.xpath("//input[@id='EjrH-destination']")).sendKeys(Keys.RETURN);
 
-		String departureDate = monthIndex + "/" + departureDay + "/" + year;
+		String departureDate = monthIndex + "/" + checkinDay + "/" + year;
 		driver.findElement(By.xpath("//div[@id='JGgU-depart-input']")).click();
 		driver.findElement(By.xpath("//div[@id='JGgU-depart-input']")).clear();
 		driver.findElement(By.xpath("//div[@id='JGgU-depart-input']")).sendKeys(departureDate);
@@ -59,7 +60,7 @@ public class FlightSelectionPage {
 		}
 		driver.findElement(By.xpath("//div[@id='JGgU-depart-input']")).sendKeys(Keys.RETURN);
 		
-		String arrivalDate = monthIndex + "/" + arrivalDay + "/" + year;
+		String arrivalDate = monthIndex + "/" + checkoutDay+ "/" + year;
 		driver.findElement(By.xpath("//div[@id='JGgU-return-input']")).click();
 		driver.findElement(By.xpath("//div[@id='JGgU-return-input']")).clear();
 		driver.findElement(By.xpath("//div[@id='JGgU-return-input']")).sendKeys(arrivalDate);

@@ -1,6 +1,7 @@
 package agodaAutomation;
 
 import java.util.Date;
+import java.util.Set;
 import java.util.Calendar;
 import java.util.TimeZone;
 
@@ -113,21 +114,31 @@ public class ReservationOperation {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Set<String> handles = driver.getWindowHandles();
+		String currentHandle = driver.getWindowHandle();
+		for (String handle : handles) {
+
+			if (!handle.equals(currentHandle)) {
+				driver.switchTo().window(handle);
+			}
+		}
 
 	}
 
 	@Test(dependsOnMethods = { "getTopOffer" })
 	public void clickBookNow() {
 
-		JavascriptExecutor js = (JavascriptExecutor)driver;	
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript(
+				"window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("//button[@data-element-name='search-button'] ")).click();
+		
+		driver.findElement(By.xpath("//button[contains(.,'Hemen')]")).click();
 
 	}
 
