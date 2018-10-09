@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [SuiteOne]" guice-stage="DEVELOPMENT">
-  <parameter name="testType" value="single"/>
+  <parameter name="testType" value="firefox"/>
   <parameter name="firefoxPath" value="C:\\Users\\doga.unal\\Desktop\\geckodriver.exe"/>
   <parameter name="edgePath" value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe"/>
   <parameter name="chromePath" value="C:\\Users\\doga.unal\\Desktop\\chromedriver.exe"/>
@@ -13,6 +13,13 @@
     <parameter name="browserName" value="edge"/>
     <parameter name="checkinDay" value="20"/>
     <classes>
+      <class name="agodaAutomation.ReservationOperation">
+        <methods>
+          <include name="getTopOffer"/>
+          <include name="clickBookNow"/>
+          <include name="handleCriteriaFilters" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- agodaAutomation.ReservationOperation -->
       <class name="agodaAutomation.LoginPage">
         <methods>
           <include name="openLoginWindow"/>
@@ -21,13 +28,6 @@
           <include name="handleRooms"/>
         </methods>
       </class> <!-- agodaAutomation.LoginPage -->
-      <class name="agodaAutomation.ReservationOperation">
-        <methods>
-          <include name="getTopOffer"/>
-          <include name="clickBookNow"/>
-          <include name="handleCriteriaFilters" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- agodaAutomation.ReservationOperation -->
     </classes>
   </test> <!-- HB Edge(failed) -->
   <test thread-count="5" name="HB Chrome(failed)">
@@ -38,6 +38,13 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="checkinDay" value="20"/>
     <classes>
+      <class name="agodaAutomation.ReservationOperation">
+        <methods>
+          <include name="getTopOffer"/>
+          <include name="clickBookNow"/>
+          <include name="handleCriteriaFilters" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- agodaAutomation.ReservationOperation -->
       <class name="agodaAutomation.LoginPage">
         <methods>
           <include name="openLoginWindow"/>
@@ -46,39 +53,6 @@
           <include name="handleRooms"/>
         </methods>
       </class> <!-- agodaAutomation.LoginPage -->
-      <class name="agodaAutomation.ReservationOperation">
-        <methods>
-          <include name="getTopOffer"/>
-          <include name="clickBookNow"/>
-          <include name="handleCriteriaFilters" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- agodaAutomation.ReservationOperation -->
     </classes>
   </test> <!-- HB Chrome(failed) -->
-  <test thread-count="5" name="HB Firefox(failed)">
-    <parameter name="checkoutDay" value="23"/>
-    <parameter name="cityName" value="Paris"/>
-    <parameter name="money" value="500"/>
-    <parameter name="year" value="2019"/>
-    <parameter name="monthIndex" value="4"/>
-    <parameter name="browserName" value="firefox"/>
-    <parameter name="checkinDay" value="20"/>
-    <classes>
-      <class name="agodaAutomation.LoginPage">
-        <methods>
-          <include name="openLoginWindow"/>
-          <include name="openBrowser"/>
-          <include name="handleCurrency"/>
-          <include name="handleRooms"/>
-        </methods>
-      </class> <!-- agodaAutomation.LoginPage -->
-      <class name="agodaAutomation.ReservationOperation">
-        <methods>
-          <include name="getTopOffer"/>
-          <include name="clickBookNow"/>
-          <include name="handleCriteriaFilters" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- agodaAutomation.ReservationOperation -->
-    </classes>
-  </test> <!-- HB Firefox(failed) -->
 </suite> <!-- Failed suite [SuiteOne] -->

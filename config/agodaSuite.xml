@@ -1,50 +1,32 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="SuiteOne" parallel="tests">
-	<parameter name="testType" value="single"></parameter>
+<?xml version="1.0" encoding="UTF-8"?>
+<suite allow-return-values="false" configfailurepolicy="skip"
+	data-provider-thread-count="10" group-by-instances="false" guice-stage="DEVELOPMENT"
+	junit="false" name="SuiteOne" parallel="tests" preserve-order="true"
+	skipfailedinvocationcounts="false" thread-count="5">
+	<parameter name="testType" value="firefox" />
 	<parameter name="chromePath"
-		value="C:\\Users\\doga.unal\\Desktop\\chromedriver.exe"></parameter>
+		value="C:\\Users\\doga.unal\\Desktop\\chromedriver.exe" />
 	<parameter name="firefoxPath"
-		value="C:\\Users\\doga.unal\\Desktop\\geckodriver.exe"></parameter>
+		value="C:\\Users\\doga.unal\\Desktop\\geckodriver.exe" />
 	<parameter name="edgePath"
-		value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe"></parameter>
-	<test name="init">
+		value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe" />
+	<test allow-return-values="false" group-by-instances="false"
+		junit="false" name="init" preserve-order="true"
+		skipfailedinvocationcounts="false">
 
 		<classes>
-			<class name="agodaAutomation.DriverManager"></class>
+			<class name="agodaAutomation.DriverManager" />
 		</classes>
 	</test>
-	<test name="HB Chrome" parallel="none">
-		<parameter name="cityName" value="Paris"></parameter>
-		<parameter name="monthIndex" value="4"></parameter>
-		<parameter name="checkinDay" value="20"></parameter>
-		<parameter name="checkoutDay" value="23"></parameter>
-		<parameter name="browserName" value="chrome"></parameter>
-		<parameter name="money" value="500"></parameter>
-
-		<classes>
-
-			<class name="agodaAutomation.LoginPage">
-				<methods>
-				</methods>
-			</class>
-			<class name="agodaAutomation.ReservationOperation">
-				<methods>
-				</methods>
-			</class>
-			
-
-
-
-		</classes>
-	</test>
-	<test name="HB Firefox" parallel="none">
-		<parameter name="browserName" value="firefox"></parameter>
-		<parameter name="cityName" value="Paris"></parameter>
-		<parameter name="monthIndex" value="4"></parameter>
-		<parameter name="checkinDay" value="20"></parameter>
-		<parameter name="checkoutDay" value="23"></parameter>
-		<parameter name="money" value="500"></parameter>
-		<parameter name="year" value="2019"></parameter>
+	<test allow-return-values="false" group-by-instances="false"
+		junit="false" name="HB Chrome" parallel="none" preserve-order="true"
+		skipfailedinvocationcounts="false">
+		<parameter name="cityName" value="Paris" />
+		<parameter name="monthIndex" value="4" />
+		<parameter name="checkinDay" value="20" />
+		<parameter name="checkoutDay" value="23" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="money" value="500" />
 
 		<classes>
 
@@ -59,16 +41,45 @@
 
 
 
+
+		</classes>
+	</test>
+	<test allow-return-values="false" group-by-instances="false"
+		junit="false" name="HB Firefox" parallel="none" preserve-order="true"
+		skipfailedinvocationcounts="false">
+		<parameter name="browserName" value="firefox" />
+		<parameter name="cityName" value="Paris" />
+		<parameter name="monthIndex" value="4" />
+		<parameter name="checkinDay" value="20" />
+		<parameter name="checkoutDay" value="23" />
+		<parameter name="money" value="500" />
+		<parameter name="year" value="2019" />
+
+		<classes>
+
+			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+			<class name="agodaAutomation.ReservationOperation">
+				<methods>
+				</methods>
+			</class>
+
+
+
 		</classes>
 	</test>
 
-	<test name="HB Edge" parallel="none">
-		<parameter name="browserName" value="edge"></parameter>
-		<parameter name="cityName" value="Paris"></parameter>
-		<parameter name="monthIndex" value="4"></parameter>
-		<parameter name="checkinDay" value="20"></parameter>
-		<parameter name="checkoutDay" value="23"></parameter>
-		<parameter name="money" value="500"></parameter>
+	<test allow-return-values="false" group-by-instances="false"
+		junit="false" name="HB Edge" parallel="none" preserve-order="true"
+		skipfailedinvocationcounts="false">
+		<parameter name="browserName" value="edge" />
+		<parameter name="cityName" value="Paris" />
+		<parameter name="monthIndex" value="4" />
+		<parameter name="checkinDay" value="20" />
+		<parameter name="checkoutDay" value="23" />
+		<parameter name="money" value="500" />
 
 		<classes>
 

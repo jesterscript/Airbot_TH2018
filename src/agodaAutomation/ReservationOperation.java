@@ -122,7 +122,7 @@ public class ReservationOperation {
 				driver.switchTo().window(handle);
 			}
 		}
-
+		
 	}
 
 	@Test(dependsOnMethods = { "getTopOffer" })
@@ -139,6 +139,7 @@ public class ReservationOperation {
 		}
 		
 		driver.findElement(By.xpath("//button[contains(.,'Hemen')]")).click();
+		driver.quit();
 
 	}
 

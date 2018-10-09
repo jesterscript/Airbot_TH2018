@@ -82,7 +82,7 @@ public class GUI {
 				}
 				
 				WebDriver wb = new ChromeDriver();
-				wb.get("C:\\Users\\melihbugra.oguzer\\Pictures\\Airbot_TH2018-master\\test-output\\emailable-report.html");
+				wb.get("C:\\Users\\doga.unal\\Documents\\GitHub\\Airbot_TH2018\\test-output\\emailable-report.html");
 				try {
 					Thread.sleep(15000);
 				} catch (InterruptedException e) {

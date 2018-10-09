@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HB Firefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 09 16:42:43 EET 2018</td>
+<td>Started on:</td><td>Tue Oct 09 16:49:16 EET 2018</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24142 ms)</td>
+<tr><td>Total time:</td><td>121 seconds (121074 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,154 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='agodaAutomation.ReservationOperation.handleCriteriaFilters()'><b>handleCriteriaFilters</b><br>Test class: agodaAutomation.ReservationOperation<br>Parameters: firefox, 500</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DOGAUNAL-840&apos;, ip: &apos;192.168.1.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\DOGA~1.UNA\AppData\Local\Temp\rust_mozprofile.Nj3eZ5NGqjmg, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.7.0, platformVersion=10.0, moz:processID=13668.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f7795e56-1b39-4ffd-9147-58d592a72eee
-*** Element info: {Using=id, value=price_box_1}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at agodaAutomation.ReservationOperation.handleCriteriaFilters(ReservationOperation.java:38)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1633903906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1633903906'><pre>org.openqa.selenium.WebDriverException: Tried to run command without establishing a connection
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DOGAUNAL-840&apos;, ip: &apos;192.168.1.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\DOGA~1.UNA\AppData\Local\Temp\rust_mozprofile.Nj3eZ5NGqjmg, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.7.0, platformVersion=10.0, moz:processID=13668.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f7795e56-1b39-4ffd-9147-58d592a72eee
-*** Element info: {Using=id, value=price_box_1}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at agodaAutomation.ReservationOperation.handleCriteriaFilters(ReservationOperation.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre></div></td>
-<td>10</td>
-<td>agodaAutomation.ReservationOperation@1e0b4072</td></tr>
-<tr>
-<td title='agodaAutomation.LoginPage.handleCurrency()'><b>handleCurrency</b><br>Test class: agodaAutomation.LoginPage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DOGAUNAL-840&apos;, ip: &apos;192.168.1.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\DOGA~1.UNA\AppData\Local\Temp\rust_mozprofile.Nj3eZ5NGqjmg, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.7.0, platformVersion=10.0, moz:processID=13668.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f7795e56-1b39-4ffd-9147-58d592a72eee
-*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)=&apos;Türkçe&apos;])[1]/following::span[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at agodaAutomation.LoginPage.handleCurrency(LoginPage.java:55)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace89325132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace89325132'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DOGAUNAL-840&apos;, ip: &apos;192.168.1.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\DOGA~1.UNA\AppData\Local\Temp\rust_mozprofile.Nj3eZ5NGqjmg, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.7.0, platformVersion=10.0, moz:processID=13668.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f7795e56-1b39-4ffd-9147-58d592a72eee
-*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)=&apos;Türkçe&apos;])[1]/following::span[1]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at agodaAutomation.LoginPage.handleCurrency(LoginPage.java:55)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre></div></td>
-<td>5</td>
-<td>agodaAutomation.LoginPage@4686afc2</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -223,98 +75,40 @@ Session ID: f7795e56-1b39-4ffd-9147-58d592a72eee
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='agodaAutomation.ReservationOperation.clickBookNow()'><b>clickBookNow</b><br>Test class: agodaAutomation.ReservationOperation</td>
+<td></td>
+<td>5</td>
+<td>agodaAutomation.ReservationOperation@a4a0d14</td></tr>
+<tr>
+<td title='agodaAutomation.ReservationOperation.getTopOffer()'><b>getTopOffer</b><br>Test class: agodaAutomation.ReservationOperation</td>
+<td></td>
+<td>10</td>
+<td>agodaAutomation.ReservationOperation@a4a0d14</td></tr>
+<tr>
+<td title='agodaAutomation.ReservationOperation.handleCriteriaFilters()'><b>handleCriteriaFilters</b><br>Test class: agodaAutomation.ReservationOperation<br>Parameters: firefox, 500</td>
+<td></td>
+<td>56</td>
+<td>agodaAutomation.ReservationOperation@a4a0d14</td></tr>
+<tr>
+<td title='agodaAutomation.LoginPage.handleCurrency()'><b>handleCurrency</b><br>Test class: agodaAutomation.LoginPage</td>
+<td></td>
+<td>15</td>
+<td>agodaAutomation.LoginPage@74dee932</td></tr>
+<tr>
+<td title='agodaAutomation.LoginPage.handleRooms()'><b>handleRooms</b><br>Test class: agodaAutomation.LoginPage<br>Parameters: Paris, 4, 20, 23</td>
+<td></td>
+<td>26</td>
+<td>agodaAutomation.LoginPage@74dee932</td></tr>
+<tr>
 <td title='agodaAutomation.LoginPage.openBrowser()'><b>openBrowser</b><br>Test class: agodaAutomation.LoginPage<br>Parameters: firefox</td>
 <td></td>
-<td>7</td>
-<td>agodaAutomation.LoginPage@4686afc2</td></tr>
+<td>5</td>
+<td>agodaAutomation.LoginPage@74dee932</td></tr>
 <tr>
 <td title='agodaAutomation.LoginPage.openLoginWindow()'><b>openLoginWindow</b><br>Test class: agodaAutomation.LoginPage</td>
 <td></td>
 <td>1</td>
-<td>agodaAutomation.LoginPage@4686afc2</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='agodaAutomation.ReservationOperation.clickBookNow()'><b>clickBookNow</b><br>Test class: agodaAutomation.ReservationOperation</td>
-<td><div><pre>java.lang.Throwable: Method ReservationOperation.clickBookNow()[pri:0, instance:agodaAutomation.ReservationOperation@1e0b4072] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1052315573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1052315573'><pre>java.lang.Throwable: Method ReservationOperation.clickBookNow()[pri:0, instance:agodaAutomation.ReservationOperation@1e0b4072] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='agodaAutomation.ReservationOperation.getTopOffer()'><b>getTopOffer</b><br>Test class: agodaAutomation.ReservationOperation</td>
-<td><div><pre>java.lang.Throwable: Method ReservationOperation.getTopOffer()[pri:0, instance:agodaAutomation.ReservationOperation@1e0b4072] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649580215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1649580215'><pre>java.lang.Throwable: Method ReservationOperation.getTopOffer()[pri:0, instance:agodaAutomation.ReservationOperation@1e0b4072] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='agodaAutomation.LoginPage.handleRooms()'><b>handleRooms</b><br>Test class: agodaAutomation.LoginPage</td>
-<td><div><pre>java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@4686afc2] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509949786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1509949786'><pre>java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@4686afc2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
+<td>agodaAutomation.LoginPage@74dee932</td></tr>
 </table><p>
 </body>
 </html>
