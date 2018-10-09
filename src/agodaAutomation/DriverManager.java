@@ -53,7 +53,7 @@ public static HashMap<String,WebDriver> drivers = new HashMap<>();
 		System.setProperty("webdriver.edge.driver",edgePath);
 		switch (testType) {
 		case "single":
-			createChromeDriver();
+			createFirefoxDriver();
 			break;
 		case "cross":
 			createFirefoxDriver();

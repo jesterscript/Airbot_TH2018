@@ -8,11 +8,16 @@
 	<parameter name="edgePath"
 		value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe"></parameter>
 	<test name="init">
+
 		<classes>
 			<class name="agodaAutomation.DriverManager"></class>
 		</classes>
 	</test>
 	<test name="HB Chrome" parallel="none">
+		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="monthIndex" value="4"></parameter>
+		<parameter name="checkinDay" value="20"></parameter>
+		<parameter name="checkoutDay" value="23"></parameter>
 		<parameter name="browserName" value="chrome"></parameter>
 
 		<classes>
@@ -28,7 +33,10 @@
 	</test>
 	<test name="HB Firefox" parallel="none">
 		<parameter name="browserName" value="firefox"></parameter>
-
+		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="monthIndex" value="4"></parameter>
+		<parameter name="checkinDay" value="20"></parameter>
+		<parameter name="checkoutDay" value="23"></parameter>
 
 		<classes>
 
@@ -44,7 +52,10 @@
 
 	<test name="HB Edge" parallel="none">
 		<parameter name="browserName" value="edge"></parameter>
-
+		<parameter name="cityName" value="Frankfurt"></parameter>
+		<parameter name="monthIndex" value="4"></parameter>
+		<parameter name="checkinDay" value="20"></parameter>
+		<parameter name="checkoutDay" value="23"></parameter>
 
 		<classes>
 
