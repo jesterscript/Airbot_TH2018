@@ -14,9 +14,20 @@ public class ReservationOperation {
 	{
 		// Click Room or Flight depend on input parameter
 	}
+	
+	@Parameters({"Place","Date","Room","Adult","Child","FamilyRoom","ChildAge"})
+	@Test
 	public void searchRoom()
 	{
-		
+		//Select given paremeters and click search
 	}
+	
+	@Parameters({"MaxPrice","Star","Location",""})
+	@Test
+	public void specsOfRoom()
+	{
+		//Select given paremeters and click search
+	}
+	
 
 }
