@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-SuiteOne">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openBrowser(chrome)">openBrowser(chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openBrowser(edge)">openBrowser(edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openBrowser(edge)">openBrowser(edge)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openBrowser(chrome)">openBrowser(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SuiteOne -->
@@ -131,7 +131,12 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openLoginWindow">openLoginWindow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="handleRooms">handleRooms</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="handleRooms">handleRooms</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,12 +146,7 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="preRoomSearch">preRoomSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="preRoomSearch">preRoomSearch</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openLoginWindow">openLoginWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-SuiteOne -->
@@ -165,17 +165,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="handleRooms(Frankfurt, 4, 20, 23)">handleRooms(Frankfurt, 4, 20, 23)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openBrowser(firefox)">openBrowser(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="openLoginWindow">openLoginWindow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteOne" title="agodaAutomation.LoginPage" class="method navigator-link" hash-for-method="preRoomSearch(Frankfurt, 4, 20, 23)">preRoomSearch(Frankfurt, 4, 20, 23)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SuiteOne -->
@@ -198,10 +198,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openBrowser(chrome)">
-                  </a> <!-- openBrowser(chrome) -->
+                  <a name="openBrowser(edge)">
+                  </a> <!-- openBrowser(edge) -->
                   <span class="method-name">openBrowser</span>
-                  <span class="parameters">(chrome)</span>
+                  <span class="parameters">(edge)</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at agodaAutomation.LoginPage.openBrowser(LoginPage.java:30)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -214,10 +214,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openBrowser(edge)">
-                  </a> <!-- openBrowser(edge) -->
+                  <a name="openBrowser(chrome)">
+                  </a> <!-- openBrowser(chrome) -->
                   <span class="method-name">openBrowser</span>
-                  <span class="parameters">(edge)</span>
+                  <span class="parameters">(chrome)</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at agodaAutomation.LoginPage.openBrowser(LoginPage.java:30)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -241,7 +241,7 @@
                   <a name="handleCurrency">
                   </a> <!-- handleCurrency -->
                   <span class="method-name">handleCurrency</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
@@ -255,7 +255,35 @@
                   <a name="handleCurrency">
                   </a> <!-- handleCurrency -->
                   <span class="method-name">handleCurrency</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="handleRooms">
+                  </a> <!-- handleRooms -->
+                  <span class="method-name">handleRooms</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="handleRooms">
+                  </a> <!-- handleRooms -->
+                  <span class="method-name">handleRooms</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
@@ -269,7 +297,7 @@
                   <a name="openLoginWindow">
                   </a> <!-- openLoginWindow -->
                   <span class="method-name">openLoginWindow</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
@@ -283,35 +311,7 @@
                   <a name="openLoginWindow">
                   </a> <!-- openLoginWindow -->
                   <span class="method-name">openLoginWindow</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="preRoomSearch">
-                  </a> <!-- preRoomSearch -->
-                  <span class="method-name">preRoomSearch</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="preRoomSearch">
-                  </a> <!-- preRoomSearch -->
-                  <span class="method-name">preRoomSearch</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
@@ -337,6 +337,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="handleRooms(Frankfurt, 4, 20, 23)">
+                  </a> <!-- handleRooms(Frankfurt, 4, 20, 23) -->
+                  <span class="method-name">handleRooms</span>
+                  <span class="parameters">(Frankfurt, 4, 20, 23)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="openBrowser(firefox)">
                   </a> <!-- openBrowser(firefox) -->
                   <span class="method-name">openBrowser</span>
@@ -348,14 +356,6 @@
                   <a name="openLoginWindow">
                   </a> <!-- openLoginWindow -->
                   <span class="method-name">openLoginWindow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="preRoomSearch(Frankfurt, 4, 20, 23)">
-                  </a> <!-- preRoomSearch(Frankfurt, 4, 20, 23) -->
-                  <span class="method-name">preRoomSearch</span>
-                  <span class="parameters">(Frankfurt, 4, 20, 23)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -457,43 +457,43 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'preRoomSearch')
+data.setCell(0, 1, 'handleRooms')
 data.setCell(0, 2, 'agodaAutomation.LoginPage')
-data.setCell(0, 3, 14285);
+data.setCell(0, 3, 27486);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'handleCurrency')
 data.setCell(1, 2, 'agodaAutomation.LoginPage')
-data.setCell(1, 3, 10369);
+data.setCell(1, 3, 15700);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'openBrowser')
 data.setCell(2, 2, 'agodaAutomation.LoginPage')
-data.setCell(2, 3, 8485);
+data.setCell(2, 3, 8709);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'openLoginWindow')
 data.setCell(3, 2, 'agodaAutomation.LoginPage')
-data.setCell(3, 3, 1407);
+data.setCell(3, 3, 2034);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'openBrowser')
 data.setCell(4, 2, 'agodaAutomation.LoginPage')
-data.setCell(4, 3, 17);
+data.setCell(4, 3, 16);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'openBrowser')
 data.setCell(5, 2, 'agodaAutomation.LoginPage')
-data.setCell(5, 3, 17);
+data.setCell(5, 3, 9);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'openLoginWindow')
 data.setCell(6, 2, 'agodaAutomation.LoginPage')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 1);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'preRoomSearch')
+data.setCell(7, 1, 'handleCurrency')
 data.setCell(7, 2, 'agodaAutomation.LoginPage')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'handleCurrency')
+data.setCell(8, 1, 'handleRooms')
 data.setCell(8, 2, 'agodaAutomation.LoginPage')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'preRoomSearch')
+data.setCell(9, 1, 'openLoginWindow')
 data.setCell(9, 2, 'agodaAutomation.LoginPage')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
@@ -501,14 +501,14 @@ data.setCell(10, 1, 'handleCurrency')
 data.setCell(10, 2, 'agodaAutomation.LoginPage')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'openLoginWindow')
+data.setCell(11, 1, 'handleRooms')
 data.setCell(11, 2, 'agodaAutomation.LoginPage')
 data.setCell(11, 3, 0);
 window.suiteTableData['SuiteOne']= { tableData: data, tableDiv: 'times-div-SuiteOne'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-SuiteOne">
               </div> <!-- times-div-SuiteOne -->
             </div> <!-- times-div -->
@@ -545,30 +545,30 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">openBrowser(chrome)</span>
-                <span class="method-start">7369 ms</span>
+                <span class="method-name">openBrowser(edge)</span>
+                <span class="method-start">6716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openBrowser(firefox)</span>
+                <span class="method-start">6716 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">openBrowser(edge)</span>
-                <span class="method-start">7369 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openBrowser(firefox)</span>
-                <span class="method-start">7370 ms</span>
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">6716 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openLoginWindow</span>
-                <span class="method-start">15857 ms</span>
+                <span class="method-start">15427 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">handleCurrency</span>
-                <span class="method-start">17268 ms</span>
+                <span class="method-start">17463 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">preRoomSearch(Frankfurt, 4, 20, 23)</span>
-                <span class="method-start">27639 ms</span>
+                <span class="method-name">handleRooms(Frankfurt, 4, 20, 23)</span>
+                <span class="method-start">33169 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

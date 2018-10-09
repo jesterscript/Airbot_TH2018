@@ -63,14 +63,26 @@ public class LoginPage {
 		}
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='€'])[1]/following::span[1]"))
 				.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
 	@Parameters({ "cityName", "monthIndex", "checkinDay", "checkoutDay" })
 	@Test(dependsOnMethods = { "handleCurrency" })
-	public void preRoomSearch(String cityName, String monthIndex, String checkinDay, String checkoutDay) {
+	public void handleRooms(String cityName, String monthIndex, String checkinDay, String checkoutDay) {
 
 		driver.get("https://www.agoda.com/tr-tr/?cid=-1");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.findElement(By.xpath("//input[contains(@data-selenium,'textInput')]")).click();
 		driver.findElement(By.xpath("//input[contains(@data-selenium,'textInput')]")).clear();
 		driver.findElement(By.xpath("//input[contains(@data-selenium,'textInput')]")).sendKeys(cityName);
@@ -112,7 +124,38 @@ public class LoginPage {
 				By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Pz'])[1]/following::span["+ checkoutDay + "]")).click();
 
 		System.out.println(currentMonth);
-
+		
+		for(int i = 0 ; i < 1 ; ++i)
+		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			driver.findElement(By.xpath("/html/body/div[7]/div/section[1]/section[1]/div/div[2]/div[1]/div/div[5]/div/div/div/div[3]/span[4]")).click();
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("/html/body/div[7]/div/section[1]/section[1]/div/div[2]/div[1]/div/div[5]/div/div/div/div[4]/ul/li/div/select/option[4]")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("/html/body/div[7]/div/section[1]/section[1]/div/div[2]/div[1]/div/div[5]/div/div/div/div[5]/div[1]/span")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("/html/body/div[7]/div/section[1]/section[1]/div/div[2]/div[1]/div/button")).click();
 	}
 
 }

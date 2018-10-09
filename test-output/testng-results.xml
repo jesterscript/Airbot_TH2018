@@ -2,132 +2,14 @@
 <testng-results ignored="0" total="12" passed="4" failed="2" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-09T10:17:25Z" name="SuiteOne" finished-at="2018-10-09T10:17:59Z" duration-ms="34594">
+  <suite started-at="2018-10-09T10:52:32Z" name="SuiteOne" finished-at="2018-10-09T10:53:26Z" duration-ms="53980">
     <groups>
     </groups>
-    <test started-at="2018-10-09T10:17:25Z" name="HB Chrome" finished-at="2018-10-09T10:17:25Z" duration-ms="97">
-      <class name="agodaAutomation.LoginPage">
-        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@e1de817]" started-at="2018-10-09T10:17:25Z" name="openBrowser" finished-at="2018-10-09T10:17:25Z" duration-ms="17" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at agodaAutomation.LoginPage.openBrowser(LoginPage.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-at java.base/java.lang.Thread.run(Thread.java:844)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@e1de817]" started-at="2018-10-09T10:17:25Z" name="openLoginWindow" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-at java.base/java.lang.Thread.run(Thread.java:844)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openLoginWindow -->
-        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@e1de817]" started-at="2018-10-09T10:17:25Z" name="handleCurrency" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-at java.base/java.lang.Thread.run(Thread.java:844)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleCurrency -->
-        <test-method signature="preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@e1de817]" started-at="2018-10-09T10:17:25Z" name="preRoomSearch" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@e1de817] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-at java.base/java.lang.Thread.run(Thread.java:844)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preRoomSearch -->
-      </class> <!-- agodaAutomation.LoginPage -->
-    </test> <!-- HB Chrome -->
-    <test started-at="2018-10-09T10:17:25Z" name="HB Edge" finished-at="2018-10-09T10:17:25Z" duration-ms="84">
+    <test started-at="2018-10-09T10:52:32Z" name="init" finished-at="2018-10-09T10:52:32Z" duration-ms="12">
+    </test> <!-- init -->
+    <test started-at="2018-10-09T10:52:32Z" name="HB Edge" finished-at="2018-10-09T10:52:32Z" duration-ms="74">
       <class name="agodaAutomation.DriverManager">
-        <test-method is-config="true" signature="initDriverList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.DriverManager@17a7f733]" started-at="2018-10-09T10:17:17Z" name="initDriverList" finished-at="2018-10-09T10:17:25Z" duration-ms="7326" status="PASS">
+        <test-method is-config="true" signature="initDriverList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.DriverManager@3c7f66c4]" started-at="2018-10-09T10:52:25Z" name="initDriverList" finished-at="2018-10-09T10:52:32Z" duration-ms="6668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,7 +37,7 @@ at java.base/java.lang.Thread.run(Thread.java:844)
         </test-method> <!-- initDriverList -->
       </class> <!-- agodaAutomation.DriverManager -->
       <class name="agodaAutomation.LoginPage">
-        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@503d687a]" started-at="2018-10-09T10:17:25Z" name="openBrowser" finished-at="2018-10-09T10:17:25Z" duration-ms="17" status="FAIL">
+        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@791f145a]" started-at="2018-10-09T10:52:32Z" name="openBrowser" finished-at="2018-10-09T10:52:32Z" duration-ms="9" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -193,13 +75,13 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@503d687a]" started-at="2018-10-09T10:17:25Z" name="openLoginWindow" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="0" status="SKIP">
+        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@791f145a]" started-at="2018-10-09T10:52:32Z" name="openLoginWindow" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="1" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods]]>
+              <![CDATA[Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -219,13 +101,13 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginWindow -->
-        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@503d687a]" started-at="2018-10-09T10:17:25Z" name="handleCurrency" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="0" status="SKIP">
+        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@791f145a]" started-at="2018-10-09T10:52:32Z" name="handleCurrency" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods]]>
+              <![CDATA[Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -245,13 +127,13 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleCurrency -->
-        <test-method signature="preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@503d687a]" started-at="2018-10-09T10:17:25Z" name="preRoomSearch" finished-at="2018-10-09T10:17:25Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="0" status="SKIP">
+        <test-method signature="handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@791f145a]" started-at="2018-10-09T10:52:32Z" name="handleRooms" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods]]>
+              <![CDATA[Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginPage.preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@503d687a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@791f145a] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -270,14 +152,132 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preRoomSearch -->
+        </test-method> <!-- handleRooms -->
       </class> <!-- agodaAutomation.LoginPage -->
     </test> <!-- HB Edge -->
-    <test started-at="2018-10-09T10:17:25Z" name="init" finished-at="2018-10-09T10:17:25Z" duration-ms="10">
-    </test> <!-- init -->
-    <test started-at="2018-10-09T10:17:25Z" name="HB Firefox" finished-at="2018-10-09T10:17:59Z" duration-ms="34593">
+    <test started-at="2018-10-09T10:52:32Z" name="HB Chrome" finished-at="2018-10-09T10:52:32Z" duration-ms="90">
       <class name="agodaAutomation.LoginPage">
-        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@482bce4f]" started-at="2018-10-09T10:17:25Z" name="openBrowser" finished-at="2018-10-09T10:17:33Z" duration-ms="8485" status="PASS">
+        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@a38c7fe]" started-at="2018-10-09T10:52:32Z" name="openBrowser" finished-at="2018-10-09T10:52:32Z" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at agodaAutomation.LoginPage.openBrowser(LoginPage.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe]" started-at="2018-10-09T10:52:32Z" name="openLoginWindow" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginPage.openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginWindow -->
+        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe]" started-at="2018-10-09T10:52:32Z" name="handleCurrency" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginPage.handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleCurrency -->
+        <test-method signature="handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@a38c7fe]" started-at="2018-10-09T10:52:32Z" name="handleRooms" finished-at="2018-10-09T10:52:32Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginPage.handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@a38c7fe] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleRooms -->
+      </class> <!-- agodaAutomation.LoginPage -->
+    </test> <!-- HB Chrome -->
+    <test started-at="2018-10-09T10:52:32Z" name="HB Firefox" finished-at="2018-10-09T10:53:26Z" duration-ms="53980">
+      <class name="agodaAutomation.LoginPage">
+        <test-method signature="openBrowser(java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@5677323c]" started-at="2018-10-09T10:52:32Z" name="openBrowser" finished-at="2018-10-09T10:52:41Z" duration-ms="8709" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,15 +288,15 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@482bce4f]" started-at="2018-10-09T10:17:33Z" name="openLoginWindow" finished-at="2018-10-09T10:17:35Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="1407" status="PASS">
+        <test-method signature="openLoginWindow()[pri:0, instance:agodaAutomation.LoginPage@5677323c]" started-at="2018-10-09T10:52:41Z" name="openLoginWindow" finished-at="2018-10-09T10:52:43Z" depends-on-methods="agodaAutomation.LoginPage.openBrowser" duration-ms="2034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginWindow -->
-        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@482bce4f]" started-at="2018-10-09T10:17:35Z" name="handleCurrency" finished-at="2018-10-09T10:17:45Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="10369" status="PASS">
+        <test-method signature="handleCurrency()[pri:0, instance:agodaAutomation.LoginPage@5677323c]" started-at="2018-10-09T10:52:43Z" name="handleCurrency" finished-at="2018-10-09T10:52:59Z" depends-on-methods="agodaAutomation.LoginPage.openLoginWindow" duration-ms="15700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleCurrency -->
-        <test-method signature="preRoomSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@482bce4f]" started-at="2018-10-09T10:17:45Z" name="preRoomSearch" finished-at="2018-10-09T10:17:59Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="14285" status="PASS">
+        <test-method signature="handleRooms(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:agodaAutomation.LoginPage@5677323c]" started-at="2018-10-09T10:52:59Z" name="handleRooms" finished-at="2018-10-09T10:53:26Z" depends-on-methods="agodaAutomation.LoginPage.handleCurrency" duration-ms="27486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -321,7 +321,7 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preRoomSearch -->
+        </test-method> <!-- handleRooms -->
       </class> <!-- agodaAutomation.LoginPage -->
     </test> <!-- HB Firefox -->
   </suite> <!-- SuiteOne -->
