@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [SuiteOne]" guice-stage="DEVELOPMENT">
+  <parameter name="testType" value="single"/>
+  <parameter name="firefoxPath" value="C:\\Users\\doga.unal\\Desktop\\geckodriver.exe"/>
+  <parameter name="edgePath" value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe"/>
+  <parameter name="chromePath" value="C:\\Users\\doga.unal\\Desktop\\chromedriver.exe"/>
+  <test thread-count="5" name="HB Edge(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="agodaAutomation.LoginPage">
+        <methods>
+          <include name="openLoginWindow"/>
+          <include name="openBrowser" invocation-numbers="0"/>
+          <include name="handleCurrency"/>
+        </methods>
+      </class> <!-- agodaAutomation.LoginPage -->
+    </classes>
+  </test> <!-- HB Edge(failed) -->
+  <test thread-count="5" name="HB Firefox(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="agodaAutomation.LoginPage">
+        <methods>
+          <include name="openLoginWindow"/>
+          <include name="openBrowser" invocation-numbers="0"/>
+          <include name="handleCurrency"/>
+        </methods>
+      </class> <!-- agodaAutomation.LoginPage -->
+    </classes>
+  </test> <!-- HB Firefox(failed) -->
+  <test thread-count="5" name="HB Chrome(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="agodaAutomation.LoginPage">
+        <methods>
+          <include name="openLoginWindow"/>
+          <include name="openBrowser"/>
+          <include name="handleCurrency"/>
+        </methods>
+      </class> <!-- agodaAutomation.LoginPage -->
+    </classes>
+  </test> <!-- HB Chrome(failed) -->
+</suite> <!-- Failed suite [SuiteOne] -->

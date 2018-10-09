@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteOne" parallel="tests">
+	<parameter name="testType" value="single"></parameter>
+	<parameter name="chromePath"
+		value="C:\\Users\\doga.unal\\Desktop\\chromedriver.exe"></parameter>
+	<parameter name="firefoxPath"
+		value="C:\\Users\\doga.unal\\Desktop\\geckodriver.exe"></parameter>
+	<parameter name="edgePath"
+		value="C:\\Users\\doga.unal\\Desktop\\edgedriver.exe"></parameter>
+	<test name="init">
+		<classes>
+			<class name="agodaAutomation.DriverManager"></class>
+		</classes>
+	</test>
+	<test name="HB Chrome" parallel="none">
+		<parameter name="browserName" value="chrome"></parameter>
+
+		<classes>
+
+			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+
+
+
+		</classes>
+	</test>
+	<test name="HB Firefox" parallel="none">
+		<parameter name="browserName" value="firefox"></parameter>
+
+
+		<classes>
+
+			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+
+
+
+		</classes>
+	</test>
+
+	<test name="HB Edge" parallel="none">
+		<parameter name="browserName" value="edge"></parameter>
+
+
+		<classes>
+
+			<class name="agodaAutomation.LoginPage">
+				<methods>
+				</methods>
+			</class>
+
+
+
+		</classes>
+	</test>
+
+
+</suite>
