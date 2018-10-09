@@ -84,5 +84,19 @@ public class FlightSelectionPage {
 		}
 		
 	}
+	
+	@Test(dependsOnMethods = { "flightSearch" })
+	public void listFlights() {
+		driver.findElement(By.xpath("//button[@id='PsuR-stops-2225-0-only']")).click();
+		driver.findElement(By.xpath("//li[@id='EyRj-sortType_option_1']")).click();
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 
 }
